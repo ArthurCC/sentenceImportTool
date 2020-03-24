@@ -7,5 +7,5 @@ The format of the imported file must be as follows :
 [sentence]  
 [word];[definition]  
   
-see the file [sentences_example.txt](https://github.com/ArthurCC/sentenceImportTool/blob/master/sentences_example.txt)
+see the file [sentences_example.txt](https://github.com/ArthurCC/sentenceImportTool/blob/master/sentences_example.txt)  
 This addon uses the Japanese Recognition support to get the reading of a sentence with furigana
