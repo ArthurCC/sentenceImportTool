@@ -13,4 +13,4 @@ def getProgressWidget():
 	per = QLabel(bar)
 	per.setAlignment(Qt.AlignCenter)
 	progressWidget.show()
-	return progressWidget, bar;
+	return progressWidget, bar

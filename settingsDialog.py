@@ -20,7 +20,7 @@ class SettingsDialog:
 		# file path
 		filePathLabel = QLabel()
 		filePathLabel.setText("ファイル名")
-		filePathText = QLineEdit();
+		filePathText = QLineEdit()
 		filePathText.setFixedWidth(200)
 		filePathText.setText(config['sentenceFile' + env])
 		searchButton = QPushButton("検索")
@@ -28,7 +28,7 @@ class SettingsDialog:
 		# sentence deck
 		sentenceDeckLabel = QLabel()
 		sentenceDeckLabel.setText("文デッキ名")
-		sentenceDeckText = QLineEdit();
+		sentenceDeckText = QLineEdit()
 		sentenceDeckText.setFixedWidth(200)
 		sentenceDeckText.setText(config['sentenceDeck' + env])
 		#　MCD deck
