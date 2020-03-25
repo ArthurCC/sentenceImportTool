@@ -21,7 +21,7 @@ class SettingsDialog:
 		filePathText.setFixedWidth(200)
 		filePathText.setText("C:/Users/Arthur/AppData/Roaming/Anki2/addons21/sentenceImportTool/sentences_example.txt")#("E:\Jap\phrases\phrases.txt")("C:/Users/Arthur/AppData/Roaming/Anki2/addons21/sentenceImportTool/sentences_example.txt")
 		searchButton = QPushButton("検索")
-		searchButton.clicked.connect(lambda: filePathText.setText(self.getFileName()))
+		searchButton.clicked.connect(lambda: self.setFileName(filePathText))
 		# sentence deck
 		sentenceDeckLabel = QLabel()
 		sentenceDeckLabel.setText("文デッキ名")
@@ -77,11 +77,11 @@ class SettingsDialog:
 		settings.setLayout(mainLayout)
 		settings.show()
 
-	@staticmethod
 	# return the filepath from the file dialog
-	def getFileName():
-		fileData = QFileDialog.getOpenFileName(caption="ファイルを選択してください");
-		return fileData[0]
+	def setFileName(self, filePathText):
+		fileData = QFileDialog.getOpenFileName(parent=self.mw, caption="ファイルを選択してください");
+		if fileData[0]:
+			filePathText.setText(fileData[0])
 
 	# check if at least one deck was selected, if so we process to the file reading
 	def checkDeck(self, filePath, sentenceDeckName, mcdDeckName, settings):
