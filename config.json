@@ -2,5 +2,12 @@
     "noteTypes": ["japanese"],
     "srcFields": ["Expression", "Kanji"],
     "dstFields": ["Reading", "Reading"],
-    "furiganaSuffix": " (furigana)"
+    "furiganaSuffix": " (furigana)",
+	"sentenceFileProd": "E:/Jap/phrases/phrases.txt",
+	"sentenceDeckProd": "漢字と文::文",
+	"mcdDeckProd": "漢字と文::MCD",
+	"sentenceFileTest": "C:/Users/Arthur/AppData/Roaming/Anki2/addons21/sentenceImportTool/sentences_example.txt",
+	"sentenceDeckTest": "TestSentence",
+	"mcdDeckTest": "TestMCD",
+	"env": "Prod"
 }
